@@ -7,5 +7,7 @@
 module.exports = {
   theme: {},
   variants: {},
-  plugins: [],
+  content: ['./src/**/*.{html,js}'],
+  plugins: [require('tailwindcss'), require('autoprefixer')],
+  purge: false,
 };
